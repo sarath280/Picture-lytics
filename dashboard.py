@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-from img_classification import *
+from img_classification import teachable_machine_classification
 
 st.sidebar.markdown("Welcome to Picture-lytics.")
 st.sidebar.selectbox("Link to the relevant datasets.", ["https://www.kaggle.com/vipoooool/new-plant-diseases-dataset",
