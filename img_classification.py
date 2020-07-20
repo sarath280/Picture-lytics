@@ -1,4 +1,4 @@
-import keras
+import tensorflow.keras
 from PIL import Image, ImageOps
 import numpy as np
 
@@ -8,7 +8,7 @@ def teachable_machine_classification(img, file):
     np.set_printoptions(suppress=True)
 
     # Load the model
-    model = keras.models.load_model(file)
+    model = tensorflow.keras.models.load_model(file)
 
     # Create the array of the right shape to feed into the keras model
     # The 'length' or number of images you can put into the array is
